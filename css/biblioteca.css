@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+}
+
+body{
+    background-color:#ddece5;
+    padding: none;
+    margin: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.banner{
+    height: 100px;
+    margin:none;
+}
+
+.banner .logoCatolica{
+    height: 80px;
+}
+
+.tesoro{
+    height: 80px;
+    background-color: #04743c;
+    width: 100%;
+    text-align: center;
+    margin: none;
+}
+
+.tesoro h1{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: none;
+}
+
+.intro h3{
+    text-align: center;
+    font-weight: 500;
+    color: #04743c;
+}
+
+.ubiBiblioteca{
+    width: 400px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.ubiBiblioteca img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#container2 {
+    margin: auto;
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#container2>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#container2>ul.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+}
+
+#container2>ul.slider h1 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#container2>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+#container2>ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#container2>ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+#container2>ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#container2>.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#container2>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#container2>.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #04743c;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h3{
+    text-align: center;
+    color: #04743c;
+}
+
+.botonCamara{
+    margin-top: 20px;
+}
+
+.botonEscaneo{
+    height: 40px;
+    width: 180px;
+    border: none;
+    background-color: #04743c;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.botonEscaneo:hover{
+    background-color: #14462d;
+    color: #fff;
+}
+
+.botonCamara{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pistaImagen{
+    height: 400px;
+    width: 300px;
+}
+
+.pistaImagen img{
+    height: 400px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.siguienteLugar{
+    width: 100px;
+}
+
+.siguienteLugar img{
+    width: 100px;
+}
+
+

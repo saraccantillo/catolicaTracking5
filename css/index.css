@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+}
+
+body{
+    background-color:#ddece5;
+    padding: none;
+    margin: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.banner{
+    height: 100px;
+    margin:none;
+}
+
+.banner .logoCatolica{
+    height: 80px;
+}
+
+.tesoro{
+    height: 80px;
+    background-color: #04743c;
+    width: 100%;
+    text-align: center;
+    margin: none;
+}
+
+.tesoro h1{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: none;
+}
+
+.intro h3{
+    text-align: center;
+    font-weight: 500;
+    color: #04743c;
+}
+
+.entradaPrincipal{
+    width: 400px;
+    height: 200px;
+    margin: none;
+    
+}
+
+.entradaPrincipal img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pista h3{
+    text-align: center;
+    font-weight: 500;
+    color: #04743c;
+}
+
+.pista p{
+    text-align: center;
+    font-weight: 500;
+    color: #04743c;
+}
+
+.pistaImagen{
+    width: 300px;
+    height: 400px;
+}
+
+.pistaImagen img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-radius: 10px;
+    
+}
+
+.botonEscaneo{
+    height: 40px;
+    width: 180px;
+    border: none;
+    background-color: #04743c;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.botonEscaneo:hover{
+    background-color: #14462d;
+    color: #fff;
+}
+
+.botonCamara{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.siguienteLugar{
+    width: 100px;
+}
+
+.siguienteLugar img{
+    width: 100px;
+}
