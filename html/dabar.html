@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque Dabar</title>
+    <link rel="stylesheet" href="../css/dabar.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="banner">
+            <img src="../imagenes/logoCatolica.png" class="logoCatolica">
+        </div>
+
+        <div class="tesoro">
+            <h1>📍 Estamos en Dabar! 📔</h1>
+        </div>
+
+        <div class="intro">
+
+            <h3>Ahora nos encontramos en el bloque Dabar!</h3>
+            <h3>Si estas perdido, actualmente nos encontramos aquí!</h3>
+
+            <div class="ubiBiblioteca">
+                <img src="../imagenes/ubicaciones/ubiDabar.png" alt="">
+            </div>
+            
+        </div>
+
+        <div class="info0">
+            <h3>
+                Dabar es “palabra, cosa, asunto, mandamiento, reporte, mensaje, camino, ley, testimonio, dichos, juicios" (Gen 1,3s). Dios crea hablando, pronunciando su palabra. Todo lo que el Padre ha hecho, lo ha hecho por medio de su dabar, sin Dabar, "nada de lo que ha sido hecho, fue hecho “(Jn 1,14). El Dabar hecho carne es Jesús".
+            </h3>
+        </div>
+
+        <div id="container2">
+
+            <ul class="slider">
+                <li id="slide1">
+                    <img src="../imagenes/bDabar/dabar1.jpg"/>
+                </li>
+                <li id="slide2">
+                    <img src="../imagenes/bDabar/dabar2.jpg"/>
+                </li>
+                <li id="slide3">
+                    <img src="../imagenes/bDabar/dabar3.jpg"/>
+                </li>
+                <li id="slide4">
+                    <img src="../imagenes/bDabar/dabar4.jpg"/>
+                </li>
+                <li id="slide5">
+                    <img src="../imagenes/bDabar/dabar5.jpg"/>
+                </li>
+                <li id="slide6">
+                    <img src="../imagenes/bDabar/dabar6.jpg"/>
+                </li>
+                <li id="slide7">
+                    <img src="../imagenes/bDabar/dabar7.jpg"/>
+                </li>
+            </ul>
+    
+            <ul class="menu">
+                <li>
+                    <a href="#slide1">1</a>
+                </li>
+                <li>
+                    <a href="#slide2">2</a>
+                </li>
+                <li>
+                    <a href="#slide3">3</a>
+                </li>
+                <li>
+                    <a href="#slide4">4</a>
+                </li>
+                <li>
+                    <a href="#slide5">5</a>
+                </li>
+                <li>
+                    <a href="#slide6">6</a>
+                </li>
+                <li>
+                    <a href="#slide7">7</a>
+                </li>
+            </ul>
+    
+        </div>
+
+        <div class="info">
+
+            <h3>Nos dirigiremos a otro lugar, para encontrar la siguiente pista, escanea el siguiente cartel!</h3>
+        
+            <div class="pistaImagen">
+                <img src="../imagenes/imgScan/bDabar.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="botonCamara">
+
+            <button onclick="addScene()" class="botonEscaneo">Comenzar a escanear</button>
+
+        </div>
+
+        <div class="siguienteLugar">
+            
+            <a href="../html/buenaNueva.html">
+                <img src="../imagenes/flechaVerde.png" alt="">
+            </a>
+
+        </div>
+
+        <script>
+
+            function addScene() {
+                var scene = document.createElement("iframe")
+                scene.setAttribute("src", "../trackings/trackingDabar.html")
+                scene.setAttribute("width", "300")
+                scene.setAttribute("height", "500")
+                scene.setAttribute("align-self", "center")
+                document.querySelector(".botonCamara").appendChild(scene)
+            }
+
+        </script>
+
+
+    </div>
+    
+</body>
+</html>

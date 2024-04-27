@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque Buena Nueva</title>
+    <link rel="stylesheet" href="../css/buenaNueva.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="banner">
+            <img src="../imagenes/logoCatolica.png" class="logoCatolica">
+        </div>
+
+        <div class="tesoro">
+            <h1>📍 Estamos en Buena Nueva! 📰</h1>
+        </div>
+
+        <div class="intro">
+
+            <h3>Ahora nos encontramos en el bloque Buena Nueva!</h3>
+            <h3>Si estas perdido, actualmente nos encontramos aquí!</h3>
+
+            <div class="ubiBiblioteca">
+                <img src="../imagenes/ubicaciones/ubiBuenaNueva.png" alt="">
+            </div>
+            
+        </div>
+
+        <div class="info0">
+            <h3>
+                En los primeros textos cristianos, se dice eu - angelino, EVANGELIO. La noticia es buena porque lo que anuncia contribuye a la felicidad de las personas, y proclama un acontecimiento que satisface las necesidades e ilusiones de la comunidad siendo veraz y digna de crédito. Toda noticia puede volverse "buena nueva" en la medida en que sea contada para construir y hacer el bien.
+            </h3>
+        </div>
+
+        <div id="container2">
+
+            <ul class="slider">
+                <li id="slide1">
+                    <img src="../imagenes/bBuenaNueva/nueva1.jpg"/>
+                </li>
+                <li id="slide2">
+                    <img src="../imagenes/bBuenaNueva/nueva2.jpg"/>
+                </li>
+                <li id="slide3">
+                    <img src="../imagenes/bBuenaNueva/nueva3.jpg"/>
+                </li>
+                <li id="slide4">
+                    <img src="../imagenes/bBuenaNueva/nueva4.jpg"/>
+                </li>
+                <li id="slide5">
+                    <img src="../imagenes/bBuenaNueva/nueva5.jpg"/>
+                </li>
+                <li id="slide6">
+                    <img src="../imagenes/bBuenaNueva/nueva6.jpg"/>
+                </li>
+                <li id="slide7">
+                    <img src="../imagenes/bBuenaNueva/nueva7.jpg"/>
+                </li>
+                <li id="slide8">
+                    <img src="../imagenes/bBuenaNueva/nueva8.jpg"/>
+                </li>
+            </ul>
+    
+            <ul class="menu">
+                <li>
+                    <a href="#slide1">1</a>
+                </li>
+                <li>
+                    <a href="#slide2">2</a>
+                </li>
+                <li>
+                    <a href="#slide3">3</a>
+                </li>
+                <li>
+                    <a href="#slide4">4</a>
+                </li>
+                <li>
+                    <a href="#slide5">5</a>
+                </li>
+                <li>
+                    <a href="#slide6">6</a>
+                </li>
+                <li>
+                    <a href="#slide7">7</a>
+                </li>
+                <li>
+                    <a href="#slide8">8</a>
+                </li>
+            </ul>
+    
+        </div>
+
+        <div class="info">
+
+            <h3>Nos dirigiremos a otro lugar, para encontrar la siguiente pista, escanea el siguiente cartel!</h3>
+
+            <div class="pistaImagen">
+                <img src="../imagenes/imgScan/bBuenaNueva.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="botonCamara">
+
+            <button onclick="addScene()" class="botonEscaneo">Comenzar a escanear</button>
+
+        </div>
+
+        <div class="siguienteLugar">
+            
+            <a href="../html/canchas.html">
+                <img src="../imagenes/flechaVerde.png" alt="">
+            </a>
+
+        </div>
+
+        <script>
+
+            function addScene() {
+                var scene = document.createElement("iframe")
+                scene.setAttribute("src", "../trackings/trackingNueva.html")
+                scene.setAttribute("width", "300")
+                scene.setAttribute("height", "500")
+                scene.setAttribute("align-self", "center")
+                document.querySelector(".botonCamara").appendChild(scene)
+            }
+
+        </script>
+
+
+    </div>
+    
+</body>
+</html>

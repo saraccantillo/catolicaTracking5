@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque Humanitas</title>
+    <link rel="stylesheet" href="../css/humanitas.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="banner">
+            <img src="../imagenes/logoCatolica.png" class="logoCatolica">
+        </div>
+
+        <div class="tesoro">
+            <h1>📍 Estamos en Humanitas! 🌍</h1>
+        </div>
+
+        <div class="intro">
+
+            <h3>Ahora nos encontramos en el bloque Humanitas!</h3>
+            <h3>Si estas perdido, actualmente nos encontramos aquí!</h3>
+
+            <div class="ubiBiblioteca">
+                <img src="../imagenes/ubicaciones/ubiHumanitas.png" alt="">
+            </div>
+            
+        </div>
+
+        <div class="info0">
+            <h3>
+                Es una palabra latina que significa humanidad, humanidades, humanismo. La educación es el proceso mediante el cual nos apropiamos de la humanitas, nos formamos como humanos y llegamos a ser PERSONAS dignas, singulares y autónomas. La HUMANITAS es todo lo digno, hermoso, noble, excelente, bello, trascendente, armónico. La humanitas nos da la condición de seres dignos, refleja nuestra trascendencia y nos caracteriza como "humanos”.
+            </h3>
+        </div>
+
+
+        <div id="container2">
+
+            <ul class="slider">
+                <li id="slide1">
+                    <img src="../imagenes/bHumanitas/humanitas1.jpg"/>
+                </li>
+                <li id="slide2">
+                    <img src="../imagenes/bHumanitas/humanitas2.jpg"/>
+                </li>
+                <li id="slide3">
+                    <img src="../imagenes/bHumanitas/humanitas3.jpg"/>
+                </li>
+                <li id="slide4">
+                    <img src="../imagenes/bHumanitas/humanitas4.jpg"/>
+                </li>
+            </ul>
+    
+            <ul class="menu">
+                <li>
+                    <a href="#slide1">1</a>
+                </li>
+                <li>
+                    <a href="#slide2">2</a>
+                </li>
+                <li>
+                    <a href="#slide3">3</a>
+                </li>
+                <li>
+                    <a href="#slide4">4</a>
+                </li>
+            </ul>
+    
+        </div>
+
+        <div class="info">
+
+            <h3>Nos dirigiremos a otro lugar, para encontrar la siguiente pista, escanea el siguiente cartel!</h3>
+
+            <div class="pistaImagen">
+                <img src="../imagenes/imgScan/bHumanitas.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="botonCamara">
+
+            <button onclick="addScene()" class="botonEscaneo">Comenzar a escanear</button>
+
+        </div>
+
+        <div class="siguienteLugar">
+            
+            <a href="../html/plazaFebrero.html">
+                <img src="../imagenes/flechaVerde.png" alt="">
+            </a>
+
+        </div>
+
+        <script>
+
+            function addScene() {
+                var scene = document.createElement("iframe")
+                scene.setAttribute("src", "../trackings/trackingHumanitas.html")
+                scene.setAttribute("width", "300")
+                scene.setAttribute("height", "500")
+                scene.setAttribute("align-self", "center")
+                document.querySelector(".botonCamara").appendChild(scene)
+            }
+
+        </script>
+
+
+    </div>
+    
+</body>
+</html>

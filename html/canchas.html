@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canchas</title>
+    <link rel="stylesheet" href="../css/canchas.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="banner">
+            <img src="../imagenes/logoCatolica.png" class="logoCatolica">
+        </div>
+
+        <div class="tesoro">
+            <h1>📍 Estamos en las Canchas! 🥅</h1>
+        </div>
+
+        <div class="intro">
+
+            <h3>Ahora nos encontramos en la zona deportiva!</h3>
+            <h3>Si estas perdido, actualmente nos encontramos aquí!</h3>
+
+            <div class="ubiBiblioteca">
+                <img src="../imagenes/ubicaciones/ubiCanchas.png" alt="">
+            </div>
+            
+        </div>
+
+        <div id="container2">
+
+            <ul class="slider">
+                <li id="slide1">
+                    <img src="../imagenes/canchas/canchas1.jpg"/>
+                </li>
+                <li id="slide2">
+                    <img src="../imagenes/canchas/canchas2.jpg"/>
+                </li>
+                <li id="slide3">
+                    <img src="../imagenes/canchas/canchas3.jpg"/>
+                </li>
+            </ul>
+    
+            <ul class="menu">
+                <li>
+                    <a href="#slide1">1</a>
+                </li>
+                <li>
+                    <a href="#slide2">2</a>
+                </li>
+                <li>
+                    <a href="#slide3">3</a>
+                </li>
+            </ul>
+    
+        </div>
+
+        <div class="info">
+
+            <h3>Nos dirigiremos a otro lugar, para encontrar la pista, escanea la siguiente imagen!</h3>
+
+            <div class="pistaImagen">
+                <img src="../imagenes/imgScan/canchas.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="botonCamara">
+
+            <button onclick="addScene()" class="botonEscaneo">Comenzar a escanear</button>
+
+        </div>
+
+        <div class="siguienteLugar">
+            
+            <a href="../html/humanitas.html">
+                <img src="../imagenes/flechaVerde.png" alt="">
+            </a>
+
+        </div>
+
+        <script>
+
+            function addScene() {
+                var scene = document.createElement("iframe")
+                scene.setAttribute("src", "../trackings/trackingCanchas.html")
+                scene.setAttribute("width", "300")
+                scene.setAttribute("height", "500")
+                scene.setAttribute("align-self", "center")
+                document.querySelector(".botonCamara").appendChild(scene)
+            }
+
+        </script>
+
+
+    </div>
+    
+</body>
+</html>

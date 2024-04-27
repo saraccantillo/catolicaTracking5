@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIE</title>
+    <link rel="stylesheet" href="../css/cie.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="banner">
+            <img src="../imagenes/logoCatolica.png" class="logoCatolica">
+        </div>
+
+        <div class="tesoro">
+            <h1>📍 Estamos en CIE! 🖥️</h1>
+        </div>
+
+        <div class="intro">
+
+            <h3>Ahora nos encontramos en el Centro de Innovación Educativa, dentro del bloque Kabai</h3>
+            <h3>Si estas perdido, actualmente nos encontramos aquí!</h3>
+
+            <div class="ubiBiblioteca">
+                <img src="../imagenes/ubicaciones/ubiKabai.png" alt="">
+            </div>
+            
+        </div>
+
+
+        <div id="container2">
+
+            <ul class="slider">
+                <li id="slide1">
+                    <img src="../imagenes/pCIE/cie1.jpg"/>
+                </li>
+                <li id="slide2">
+                    <img src="../imagenes/pCIE/cie2.jpg"/>
+                </li>
+                <li id="slide3">
+                    <img src="../imagenes/pCIE/cie3.jpg"/>
+                </li>
+                <li id="slide4">
+                    <img src="../imagenes/pCIE/cie4.jpg"/>
+                </li>
+            </ul>
+    
+            <ul class="menu">
+                <li>
+                    <a href="#slide1">1</a>
+                </li>
+                <li>
+                    <a href="#slide2">2</a>
+                </li>
+                <li>
+                    <a href="#slide3">3</a>
+                </li>
+                <li>
+                    <a href="#slide4">4</a>
+                </li>
+            </ul>
+    
+        </div>
+
+        <div class="info">
+
+            <h3>Nos dirigiremos a otro lugar, para encontrar la siguiente pista, escanea el siguiente cartel!</h3>
+
+            <div class="pistaImagen">
+                <img src="../imagenes/imgScan/pCIE.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="botonCamara">
+
+            <button onclick="addScene()" class="botonEscaneo">Comenzar a escanear</button>
+
+        </div>
+
+        <div class="siguienteLugar">
+            
+            <a href="../html/dabar.html">
+                <img src="../imagenes/flechaVerde.png" alt="">
+            </a>
+
+        </div>
+
+        <script>
+
+            function addScene() {
+                var scene = document.createElement("iframe")
+                scene.setAttribute("src", "../trackings/trackingCIE.html")
+                scene.setAttribute("width", "300")
+                scene.setAttribute("height", "500")
+                scene.setAttribute("align-self", "center")
+                document.querySelector(".botonCamara").appendChild(scene)
+            }
+
+        </script>
+
+
+    </div>
+    
+</body>
+</html>
