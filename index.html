@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catolica Tracking</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="banner">
+            <img src="imagenes/logoCatolica.png" class="logoCatolica">
+        </div>
+
+        <div class="tesoro">
+            <h1> 🔎 Busqueda del Tesoro 🗺️</h1>
+        </div>
+
+        <div class="intro">
+
+            <h3>Bienvenido a la Universidad Católica de Pereira, para conocer la universidad, realizarás una búsqueda del tesoro! </h3>
+            <h3>El recorrido comenzará por la entrada principal, ¿reconoces este lugar?</h3>
+            
+        </div>
+
+        <div class="entradaPrincipal">
+
+            <img src="imagenes/entradaPrincipal.png" id="entradaFoto">
+            
+        </div>
+
+        <div class="pista">
+
+            <h3>Escanea la siguiente imagen para encontrar la primera pista.</h3>
+
+            <div class="pistaImagen">
+                <img src="imagenes/imgScan/entrada.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="botonCamara">
+
+            <button onclick="addScene()" class="botonEscaneo">Comenzar a escanear</button>
+
+        </div>
+
+        <div class="siguienteLugar">
+
+            
+                <a href="html/bliblioteca.html">
+                    <img src="imagenes/flechaVerde.png" alt="">
+                </a>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function addScene() {
+            var scene = document.createElement("iframe")
+            scene.setAttribute("src", "trackings/trackingEntrada.html")
+            scene.setAttribute("width", "300")
+            scene.setAttribute("height", "500")
+            scene.setAttribute("align-self", "center")
+            document.querySelector(".botonCamara").appendChild(scene)
+        }
+
+    </script>
+
+</body>
+
+</html>
