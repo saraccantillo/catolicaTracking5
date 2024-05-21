@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
+    <link rel="stylesheet" href="../css/trackingEntrada.css">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src='../script/sample.js'></script>
+    
+    <!-- https://saraccantillo.github.io/catolicaTracking/logoCatolica/nft/golden -->
+
+    <!-- https://saraccantillo.github.io/catolicaTracking/imagenes/Golden4.jpg -->
+
+</head>
+
+<body>
+
+    <div class="arjs-loader">
+        <div>Loading...</div>
+    </div>
+
+    <a-scene
+
+        vr-mode-ui="enabled: false;"
+        renderer='antialias: true; alpha: true; precision: mediump;'
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'
+    >
+        <a-assets>
+            
+            <img id="text_img" src="https://saraccantillo.github.io/catolicaTracking/imagenes/bloqueAletheia.png?raw=true"> 
+
+        </a-assets>
+
+        <a-nft
+            samplehandler 
+            type='nft' url="https://saraccantillo.github.io/catolicaTracking/logoCatolica/nft2/biblioteca"
+            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
+        >
+
+            <a-image 
+            rotation = "-90 0 0"
+            position = "20 0 -150"
+            width = "400"
+            height = "400"
+            src="#text_img"></a-image>
+          
+        </a-nft>
+
+		<a-entity camera></a-entity>
+
+	</a-scene>
+
+
+</body>
